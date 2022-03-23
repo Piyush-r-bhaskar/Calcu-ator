@@ -1,7 +1,13 @@
 const result = document.getElementById("inputtext");
 
 const calculate = (num) => {
-  result.value += num;
+  if (result.value == "0") {
+    result.value = "";
+  } else {
+    result.value += num;
+  }
+  
+  
 };
 
 const Result = () => {
